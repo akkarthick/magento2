@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <tab id="ews_block" translate="label" sortOrder="110">
+            <label>Mailer Exchange Web Service</label>
+        </tab>
+        <section id="ewssection" translate="label" type="text" sortOrder="320" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Configuration</label>
+            <tab>ews_block</tab>
+            <resource>Mailer_EWS::ews_config</resource>
+            <group id="ewsgroup" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                    <field id="ews_hostname" translate="label comment" type="text" sortOrder="25" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Host Name</label>
+                    <comment><![CDATA[<b>smtp exchange webservice host name</b>]]></comment>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="ews_username" translate="label comment" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>User Name</label>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="ews_password" translate="label comment" type="text" sortOrder="35" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Password</label>
+                </field>
+                <field id="ews_version" translate="label" type="text" sortOrder="45" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Client Version </label>
+                    <comment><![CDATA[Client::VERSION_2016]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

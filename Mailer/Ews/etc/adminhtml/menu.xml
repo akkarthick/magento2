@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Mailer_Ews::ews_config" title="Configuration" module="Mailer_Ews" sortOrder="20" parent="Mailer_EWS::ews" action="adminhtml/system_config/edit/section/ewssection" resource="Mailer_Ews::ews_config"/>
+    </menu>
+</config>
