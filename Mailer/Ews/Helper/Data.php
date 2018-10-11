@@ -30,13 +30,6 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     }
 
     /**
-     * get enable/disable extension
-     */
-    public function getEnableModule() {
-        return $this->scopeConfig->getValue('newssection/newsgroup/active',
-                \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
-    }
-    /**
      * get base url with store code
      */
     public function getBaseUrlWithStoreCode() {
